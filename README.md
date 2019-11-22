@@ -14,4 +14,4 @@ Example: `python breached_passwords.py password1 password2 password3`
 
 ## Resources
 
-Learn more about the underlying data and the API used in this project at: [Have I Been Pwned](https://haveibeenpwned.com/).
+Learn more about the underlying data and the API used in this project at: [https://www.haveibeenpwned.com/](https://www.haveibeenpwned.com/).
