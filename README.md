@@ -10,10 +10,8 @@ _Please note that [Python](https://www.python.org) must be installed in order to
 2. Assuming that Python has already been installed, open a terminal and navigate to the directory where the breached_password.py file is located.
 3. Type python3 (or python) followed by breached_passwords.py and the password(s) you would like to check.
 
-Example:
+Example: `python breached_passwords.py password1 password2 password3`
 
-`python breached_passwords.py password1 password2 password3`
-
-##Resources
+## Resources
 
 Learn more about the underlying data and the API used in this project at: [Have I Been Pwned](https://haveibeenpwned.com/).
