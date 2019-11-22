@@ -12,11 +12,12 @@ def request_api_data(query_string):
     raise RuntimeError(f'Error fetching data: {res.status_code}, please check the URL and try again!')
 
 
-# Compare password hash with hashes returned from API and return number of times it has been breached
-def get_password_leaks(pw_suffix, resp_hashes):
-    resp_hashes = (line.split(':') for line in resp_hashes.text.splitlines())
-    for h, count in resp_hashes:
-        if h == pw_suffix:
+# Compare suffix of password hash with suffixes of hashes from breached passwords returned from API
+# Return number of times that password has been breached
+def get_password_leaks(pw_h_suffix, breached_h_suffixes):
+    breached_h_suffixes = (line.split(':') for line in breached_h_suffixes.text.splitlines())
+    for h, count in breached_h_suffixes:
+        if h == pw_h_suffix:
             return count
     return 0
 
